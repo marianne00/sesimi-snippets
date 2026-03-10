@@ -10,10 +10,18 @@
   "categories": ["Snippets"],
   "contributes": {
     "snippets": [
-      { "language": "javascript", "path": "./snippets/typescript.json" },
+      { "language": "javascript", "path": "./snippets/javascript.json" },
       { "language": "typescript", "path": "./snippets/typescript.json" },
-      { "language": "javascriptreact", "path": "./snippets/typescript.json" },
+      { "language": "javascriptreact", "path": "./snippets/javascript.json" },
       { "language": "typescriptreact", "path": "./snippets/typescript.json" }
     ]
+  },
+  "icon": "icon.jpeg",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/marianne00/sesimi-snippets"},
+  "author": {
+    "name": "Marianne",
+    "email": "mdeasis@sesimi.com"
   }
 }
