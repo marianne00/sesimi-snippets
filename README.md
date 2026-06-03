@@ -16,6 +16,12 @@ This extension provides a collection of custom code snippets for TypeScript and 
 | `glxActivePreset` | Function to determine the active preset based on aspect ratio |
 | `glxHook` | Galaxy Template Hook Boilerplate |
 
+### TypeScript & TypeScript React Snippets
+
+| Prefix | Description |
+|--------|-------------|
+| `glxUrlStatus` | Hook to check the loading status of a URL |
+
 ### TypeScript React Snippets
 
 | Prefix | Description |
