@@ -12,8 +12,10 @@
     "snippets": [
       { "language": "javascript", "path": "./snippets/javascript.json" },
       { "language": "typescript", "path": "./snippets/typescript.json" },
+      { "language": "typescript", "path": "./snippets/shared.json" },
       { "language": "javascriptreact", "path": "./snippets/javascriptreact.json" },
-      { "language": "typescriptreact", "path": "./snippets/typescriptreact.json" }
+      { "language": "typescriptreact", "path": "./snippets/typescriptreact.json" },
+      { "language": "typescriptreact", "path": "./snippets/shared.json" }
     ]
   },
   "icon": "icon.jpeg",
