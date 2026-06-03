@@ -1,40 +1,4 @@
 {
-  "Galaxy Page Context Hook": {
-    "prefix": "glxContext",
-    "scope": "javascript,typescript,javascriptreact,typescriptreact",
-    "body": [
-      "import { useContext } from 'react'",
-      "import { PageContext } from '../pages/${1:001}/data/context'",
-      "",
-      "export function ${2:index}() {",
-      "  const { $3 } = useContext(PageContext)",
-      "  const isDev = typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.DEV === true",
-      "",
-      "  if (isDev) {",
-      "    // Development environment specific code here",
-      "  }",
-      "",
-      "  // return LIVE values here",
-      "}"
-    ],
-    "description": "Galaxy Page Context Hook with dev environment check"
-  },
-  "Galaxy Get Active Preset": {
-		"prefix": "glxActivePreset",
-		"body": [
-			"export const getActivePreset = (aspectRatio: number): string | null => {",
-			"  for (const [key, fn] of Object.entries(sizes)) {",
-			"    if (fn(aspectRatio)) {",
-			"      // Extract dimensions from key like \"isLayout1080x1080\" -> \"1080x1080\"",
-			"      const match = key.match(/(\\d+)x(\\d+)/)",
-			"      return match ? `${match[1]}x${match[2]}` : null",
-			"    }",
-			"  }",
-			"  return null",
-			"}"
-		],
-		"description": "Function to determine the active preset based on aspect ratio"
-	},
   "Galaxy Template Hook Boilerplate": {
 		"prefix": "glxHook",
 		"body": [
@@ -52,13 +16,5 @@
 			" // return LIVE values here",
 			"}"
 		]
-	},
-	"Galaxy URL Status": {
-		"prefix": "glxUrlStatus",
-		"body": [
-			"import { useUrlStatus } from '@myadbox/themes/sesimi-au/shared/common'",
-			"const { isLoading } = useUrlStatus({ url: YOUR_URL_HERE })"
-		],
-		"description": "Hook to check the loading status of a URL"
 	}
 }

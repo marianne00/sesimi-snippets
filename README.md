@@ -1,14 +1,16 @@
 # Galaxy Snippets
 
-Company snippets for Sesimi development in VS Code.
+VS Code snippet extension for Galaxy template development at Sesimi.
 
-## Features
+## Snippets
 
-This extension provides a collection of custom code snippets for TypeScript and TypeScript React development, specifically designed for Sesimi's Galaxy framework and component architecture.
+### TypeScript & TypeScript React (`.ts`, `.tsx`)
 
-## Available Snippets
+| Prefix | Description |
+|--------|-------------|
+| `glxUrlStatus` | Hook to check the loading status of a URL |
 
-### TypeScript Snippets
+### TypeScript (`.ts`)
 
 | Prefix | Description |
 |--------|-------------|
@@ -16,28 +18,17 @@ This extension provides a collection of custom code snippets for TypeScript and 
 | `glxActivePreset` | Function to determine the active preset based on aspect ratio |
 | `glxHook` | Galaxy Template Hook Boilerplate |
 
-### TypeScript & TypeScript React Snippets
+### TypeScript React (`.tsx`)
 
 | Prefix | Description |
 |--------|-------------|
-| `glxUrlStatus` | Hook to check the loading status of a URL |
-
-### TypeScript React Snippets
-
-| Prefix | Description |
-|--------|-------------|
-| `glxComponent` | Create a minimal React component with cn utility |
+| `glxComponent` | React component with `cn` utility |
 
 ## Usage
 
-1. Open a TypeScript or TypeScript React file (`.ts`, `.tsx`)
-2. Start typing one of the snippet prefixes (e.g., `glxContext`)
-3. Press `Tab` or `Enter` to expand the snippet
-4. Use `Tab` to navigate between placeholder fields
+Open a `.ts` or `.tsx` file, type a prefix, and press `Tab` or `Enter` to expand. Use `Tab` to navigate between placeholder fields.
 
-### Example
-
-Type `glxContext` and press `Tab` to generate:
+**Example** — type `glxContext` and press `Tab`:
 
 ```typescript
 import { useContext } from 'react'
@@ -57,16 +48,14 @@ export function index() {
 
 ## Installation
 
-### From VSIX File
+### From VSIX
 
-1. Download the `.vsix` file from the releases
-2. Open VS Code
-3. Go to Extensions view (`Cmd+Shift+X` on macOS, `Ctrl+Shift+X` on Windows/Linux)
-4. Click the `...` menu at the top of the Extensions view
-5. Select "Install from VSIX..."
-6. Choose the downloaded `.vsix` file
+1. Download the `.vsix` from [releases](https://github.com/marianne00/galaxy-snippets)
+2. Open VS Code → Extensions (`Cmd+Shift+X` / `Ctrl+Shift+X`)
+3. Click `...` → **Install from VSIX...**
+4. Select the downloaded file
 
-### From Command Line
+### From the command line
 
 ```bash
 code --install-extension galaxy-snippets-1.0.0.vsix
@@ -74,28 +63,8 @@ code --install-extension galaxy-snippets-1.0.0.vsix
 
 ## Requirements
 
-- VS Code version 1.80.0 or higher
-
-## Contributing
-
-This extension is maintained for internal use at Sesimi. For suggestions or improvements, please contact the development team.
-
-## Author
-
-**Marianne**
-Email: mdeasis@sesimi.com
-
-## Repository
-
-[GitHub Repository](https://github.com/marianne00/galaxy-snippets)
-
-## Version History
-
-### 1.0.0
-- Initial release
-- Added Galaxy framework snippets for TypeScript and TypeScript React
-- Includes context hooks, components, and utility functions
+VS Code 1.80.0 or higher.
 
 ---
 
-**Enjoy coding with Galaxy Snippets!** 🚀
+Maintained for internal use at Sesimi. For suggestions, reach out to [Marianne](mailto:mdeasis@sesimi.com).
