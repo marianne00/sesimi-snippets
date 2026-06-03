@@ -52,5 +52,13 @@
 			" // return LIVE values here",
 			"}"
 		]
+	},
+	"Galaxy URL Status": {
+		"prefix": "glxUrlStatus",
+		"body": [
+			"import { useUrlStatus } from '@myadbox/themes/sesimi-au/shared/common'",
+			"const { isLoading } = useUrlStatus({ url: YOUR_URL_HERE })"
+		],
+		"description": "Hook to check the loading status of a URL"
 	}
 }
